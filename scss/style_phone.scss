@@ -1,0 +1,387 @@
+@import "partials/partials";
+@import "partials/variables";
+@media screen and (max-width: 390px) and (min-width: 100px) {
+     @for $i from 1 through 12{
+        .col-s-#{$i} {
+            width: (100% / 12)*$i;
+        }
+    }
+    header {
+        height: auto;
+        .top {
+            .logo {
+                padding-top: 70px;
+                img {
+                    width: 80%;
+                    display: none;
+                }
+            }
+            h1 {
+                width: 80%;
+                padding-top: 20px;
+                font-size: 24px;
+            }
+            h2 {
+                width: 80%;
+                padding-top: 15px;
+                font-size: 18px;
+                line-height: 22px;
+            }
+        }
+        .row {
+            display: flex;
+            justify-content: center;
+            .wrap {
+                margin: 25px 0 0;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                a {
+                    text-transform: uppercase;
+                    font-size: 24px;
+                    font-weight: bold;
+                    text-decoration: none;
+                    color: #fff;
+                    .ico {
+                        width: 130px;
+                        height: 130px;
+                        @include icon($backgroundSize: 130px 130px);
+                        margin-left: 10px;
+                        img {
+                            height: 75px;
+                            display: none;
+                        }
+                        p {
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+        .wrap_2 {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .icons_left {
+                margin-top: 10px;
+                display: flex;
+                justify-content: center;
+                a {
+                    text-transform: uppercase;
+                    font-size: 24px;
+                    font-weight: bold;
+                    text-decoration: none;
+                    color: #fff;
+                    .ico {
+                        width: 130px;
+                        height: 130px;
+                        margin-left: 10px;
+                        @include icon($backgroundSize: 130px 130px);
+                        img {
+                            height: 75px;
+                            display: none;
+                        }
+                        p {
+                            display: block;
+                        }
+                    }
+                }
+            }
+            .icons_rigth {
+                width: 100%;
+                height: auto;
+                margin-top: 10px;
+                display: flex;
+                justify-content: center;
+                a {
+                    text-transform: uppercase;
+                    font-size: 24px;
+                    font-weight: bold;
+                    text-decoration: none;
+                    color: #fff;
+                    .ico {
+                        width: 130px;
+                        height: 130px;
+                        margin-left: 10px;
+                        @include icon($backgroundSize: 130px 130px);
+                        img {
+                            height: 75px;
+                            display: none;
+                        }
+                        p {
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    nav {
+        height: auto;
+        .to_be_sticky {
+            z-index: 100;
+            .navigation {
+                background-color: #fff;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                .nav-wrap {
+                    display: flex;
+                    flex-direction: row;
+                    .logo {
+                        padding: 20px 0 15px 20px;
+                        width: 70%;
+                        display: flex;
+                        flex-direction: row;
+                        img {
+                            width: 161px;
+                            height: 36px;
+                            margin-left: 10px;
+                            align-self: flex-start;
+                        }
+                    }
+                    .hamburger {
+                        align-self: center;
+                        margin-right: 0;
+                    }
+                }
+                div.menu {
+                    width: 100%;
+                    align-self: center;
+                    display: flex;
+                    align-items: center;
+                    ul {
+                        width: auto;
+                        height: auto;
+                        display: block;
+                    }
+                    li {
+                        padding: 15px 0;
+                        border-bottom: 1px solid #e0e0d1;
+                        display: flex;
+                        flex-direction: column;
+                        width: 100%;
+                        align-content: center;
+                        a {
+                            align-self: center;
+                            color: inherit;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .section_1 {
+        height: auto;
+        padding: 45px 0;
+        .section_feature {
+            flex-direction: column;
+            .feature {
+                .icon_f1 {
+                    display: none;
+                }
+                .icon_f2 {
+                    display: none;
+                }
+                .icon_f3 {
+                    display: none;
+                }
+                .icon_f4 {
+                    display: none;
+                }
+            }
+        }
+    }
+    .section_2 {
+        height: auto;
+        .vertical_center {
+            width: 90%;
+            .section_about {
+                .title {
+                    margin-bottom: 20px;
+                }
+                .wrap {
+                    .picture {
+                        img {
+                            display: none;
+                        }
+                    }
+                    .text {
+                        width: auto;
+                        height: auto;
+                        margin: 0;
+                        button {
+                            margin-top: 50px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .section_3 {
+        .quotes {
+            div.ico {
+                width: 130px;
+                height: 130px;
+                @include icon($backgroundSize: 130px 130px);
+                img {
+                    height: 45px;
+                }
+            }
+            p {
+                @include quote_text(20px, 20px 0 20px 0);
+                line-height: 35px;
+                width: 80%;
+            }
+        }
+    }
+    .section_4 {
+        padding: 45px 0;
+        height: auto;
+        .section_team {
+            .team_wrap {
+                padding: 0;
+                .team {
+                    .box {
+                        width: 100%;
+                        padding: 15px 0;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        .avatar {
+                            width: 130px;
+                            height: 130px;
+                            margin-bottom: 10px;
+                        }
+                        h2 {
+                            padding: 10px;
+                        }
+                        .social {
+                            img {
+                                padding-bottom: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .section_5 {
+        height: auto;
+        .section_skills {
+            .title {
+                margin-top: 20px;
+            }
+            .our_skills {
+                margin-top: 20px;
+                .skill {
+                    .bar {
+                        width: 90%;
+                    }
+                }
+            }
+        }
+    }
+    .section_6 {
+        @extend .section_3;
+    }
+    .section_7 {
+        .labels {
+            .label {
+                margin: 20px;
+                p:first-child {
+                    font-size: 35px;
+                }
+                p:last-child {}
+            }
+        }
+    }
+    .section_8 {
+        height: auto;
+        .section_portfolio {
+            .title {
+                align-self: center;
+                padding-bottom: 20px;
+            }
+            .buttons_portfolio {
+                width: 100%;
+                flex-direction: column;
+                align-items: center;
+                button {
+                    margin: 2px;
+                    width: 60%;
+                }
+            }
+        }
+        .portfolio {
+            .port_box {
+                margin-bottom: 15px;
+                img {
+                    height: 200px;
+                }
+            }
+        }
+    }
+    .section_9 {
+        height: auto;
+        padding-top: 45px;
+        .grid-container {
+            width: 100%;
+            .title {
+                margin: 10px 0;
+            }
+            .section_contact {
+                display: flex;
+                flex-direction: column;
+                .form {
+                    align-self: center;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    form {
+                        margin-left: 10px;
+                        input[value^="Your"] {
+                            font-size: 12px;
+                            width: 90%;
+                            margin-bottom: 30px;
+                        }
+                        textarea.textarea[name='message'] {
+                            font-size: 12px;
+                            width: 90%;
+                        }
+                    }
+                }
+                .contact {
+                    align-self: center;
+                    padding-left: 10px;
+                    margin: 30px 0;
+                    p {
+                        font-size: 18px;
+                    }
+                    p:first-child {
+                        font-size: 18px;
+                    }
+                    .icons {
+                        margin-top: 30px;
+                        img {
+                            margin-left: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    footer {
+        padding: 15px 0;
+        .grid-container {
+            display: flex;
+            justify-content: center;
+            img {
+                height: 50px;
+            }
+        }
+    }
+}

@@ -1,0 +1,321 @@
+@import "partials/partials";
+@import "partials/variables";
+@media screen and (min-width: 390px) and (max-width: 620px) {
+     @for $i from 1 through 12{
+        .col-s-#{$i} {
+            width: (100% / 12)*$i;
+        }
+    }
+    header {
+        height: auto;
+        .top {
+            .logo {
+                padding-top: 80px;
+                img {
+                    display: none;
+                }
+            }
+            h1 {
+                width: 80%;
+                padding-top: 20px;
+                font-size: 24px;
+            }
+            h2 {
+                width: 80%;
+                padding-top: 15px;
+                font-size: 18px;
+                line-height: 22px;
+            }
+        }
+        .row {
+            display: flex;
+            justify-content: center;
+            .wrap {
+                margin: 25px 0 0;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                a {
+                    .ico {
+                        width: 130px;
+                        height: 130px;
+                        @include icon($backgroundSize: 130px 130px);
+                        margin-left: 10px;
+                        img {
+                            height: 75px;
+                        }
+                        p {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+        .wrap_2 {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .icons_left {
+                margin-top: 10px;
+                display: flex;
+                justify-content: center;
+                a {
+                    .ico {
+                        width: 130px;
+                        height: 130px;
+                        margin-left: 10px;
+                        @include icon($backgroundSize: 130px 130px);
+                        img {
+                            height: 75px;
+                        }
+                        p {
+                            display: none;
+                        }
+                    }
+                }
+            }
+            .icons_rigth {
+                width: 100%;
+                height: auto;
+                margin-top: 10px;
+                display: flex;
+                justify-content: center;
+                a {
+                    .ico {
+                        width: 130px;
+                        height: 130px;
+                        margin-left: 10px;
+                        @include icon($backgroundSize: 130px 130px);
+                        img {
+                            height: 75px;
+                        }
+                        p {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    nav {
+        height: auto;
+        .to_be_sticky {
+            z-index: 100;
+            .navigation {
+                background-color: #fff;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                .nav-wrap {
+                    display: flex;
+                    flex-direction: row;
+                    .logo {
+                        padding: 20px 0 15px 20px;
+                        width: 70%;
+                        display: flex;
+                        flex-direction: row;
+                        img {
+                            width: 161px;
+                            height: 36px;
+                            margin-left: 40px;
+                            align-self: flex-start;
+                        }
+                    }
+                    .hamburger {
+                        align-self: center;
+                        margin-right: 0;
+                        padding-left: 40px;
+                    }
+                }
+                div.menu {
+                    width: 100%;
+                    align-self: center;
+                    display: flex;
+                    align-items: center;
+                    ul {
+                        width: 100%;
+                        height: auto;
+                        display: block;
+                    }
+                    li {
+                        padding: 15px 0;
+                        border-bottom: 1px solid #e0e0d1;
+                        display: flex;
+                        flex-direction: column;
+                        width: 100%;
+                        align-content: center;
+                        a {
+                            align-self: center;
+                            color: inherit;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .section_1 {
+        height: auto;
+        padding: 45px 0;
+        .section_feature {
+            flex-direction: column;
+        }
+    }
+    .section_2 {
+        height: auto;
+        .vertical_center {
+            width: 90%;
+            .section_about {
+                .title {
+                    margin-bottom: 20px;
+                }
+                .wrap {
+                    .picture {
+                        img {
+                            display: none;
+                        }
+                    }
+                    .text {
+                        width: auto;
+                        height: auto;
+                        margin: 0;
+                        button {
+                            margin-top: 50px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .section_3 {
+        .quotes {
+            div.ico {
+                width: 130px;
+                height: 130px;
+                @include icon($backgroundSize: 130px 130px);
+                img {
+                    height: 45px;
+                }
+            }
+            p {
+                @include quote_text(20px, 20px 0 20px 0);
+                line-height: 35px;
+                width: 80%;
+            }
+        }
+    }
+    .section_4 {
+        padding: 45px 0;
+        height: auto;
+        .section_team {
+            .title {
+                margin: 20px 0;
+                padding: 0;
+            }
+            .navigation {
+                .arr {
+                    margin: 10px 7px 20px 0;
+                }
+            }
+            .team_wrap {
+                padding: 0;
+                .team {
+                    .box {
+                        width: 100%;
+                        padding: 15px 0;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        .avatar {
+                            width: 160px;
+                            height: 160px;
+                            margin-bottom: 10px;
+                        }
+                        h2 {
+                            padding: 30px;
+                        }
+                        .social {
+                            img {
+                                padding-bottom: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .section_5 {
+        height: auto;
+        .section_skills {
+            .title {
+                margin-top: 20px;
+            }
+            .our_skills {
+                margin-top: 20px;
+            }
+        }
+    }
+    .section_6 {
+        @extend .section_3;
+    }
+    .section_8 {
+        height: auto;
+        .section_portfolio {
+            .title {
+                align-self: center;
+            }
+            .buttons_portfolio {
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+        }
+        .portfolio {
+            .port_box {
+                // width:200px;
+                //   height:150px;
+            }
+        }
+    }
+    .section_9 {
+        height: auto;
+        padding: 45px 0;
+        .grid-container {
+            .title {
+                margin: 0;
+            }
+            .section_contact {
+                width: 90%;
+                flex-direction: column;
+                align-self: center;
+                .form {
+                    form {
+                        input[value^="Your"] {
+                            height: 50px;
+                            margin-bottom: 27px;
+                            width: 90%;
+                        }
+                        textarea.textarea[name='message'] {
+                            width: 90%;
+                        }
+                        input.button {}
+                    }
+                }
+                .contact {
+                    margin-top: 30px;
+                    height: 70vh;
+                    width: 90%;
+                    padding-left: 20px;
+                    p {
+                        font-size: 18px;
+                        line-height: 25px;
+                    }
+                    p:first-child {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}

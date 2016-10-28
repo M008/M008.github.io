@@ -1,0 +1,259 @@
+@import "partials/partials";
+@import "partials/variables";
+@media screen and (max-width: 770px) and (min-width: 620px) {
+    nav {
+        .to_be_sticky {
+            .navigation {
+                .nav-wrap {
+                    img {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+// @media screen and (max-width: 850px) and (min-width: 620px){
+//   .section_1{
+//     .section_feature{
+//       .feature{
+//         width:400px;
+//       }
+//     }
+//   }
+// }
+@media screen and (max-width: 1020px) and (min-width: 620px) {
+    header {
+        width: 99%;
+        height: auto;
+        .top {
+            .logo {
+                padding-top: 40px;
+                img {
+                    height: 80px;
+                }
+            }
+            h1 {
+                padding-top: 40px;
+                width: 80%;
+            }
+            h2 {
+                width: 80%;
+            }
+        }
+        .row {
+            .wrap {
+                margin: 30 10px;
+                a {
+                    .ico {
+                        width: 130px;
+                        height: 130px;
+                        margin-left: 10px;
+                        @include icon($backgroundSize: 130px 130px);
+                        img {
+                            height: 75px;
+                        }
+                    }
+                }
+            }
+        }
+        .wrap_3 {
+            padding-bottom: 50px;
+        }
+    }
+    .row {
+        .wrap_2 {
+            margin: 0 10px;
+            .icons_left {
+                a {
+                    .ico {
+                        width: 130px;
+                        height: 130px;
+                        margin-left: 10px;
+                        @include icon($backgroundSize: 130px 130px);
+                        img {
+                            height: 75px;
+                        }
+                    }
+                }
+            }
+            .icons_rigth {
+                a {
+                    .ico {
+                        width: 130px;
+                        height: 130px;
+                        margin-left: 10px;
+                        @include icon($backgroundSize: 130px 130px);
+                        img {
+                            height: 75px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    nav {
+        .to_be_sticky {
+            .navigation {
+                .nav-wrap {
+                    img {
+                        // display: none;
+                    }
+                }
+                div.menu {
+                    height: 70px;
+                    ul {}
+                    li {
+                        padding: 25px 0;
+                        a {
+                            font-size: 14px;
+                            padding: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .section_1 {
+        height: auto;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        .section_feature {
+          max-width: 802px;
+          min-width: 402px;
+        
+            display:flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            .feature {
+                max-width: 400px;
+min-width: 190px;
+border: 1px solid green;
+            }
+        }
+    }
+    .section_2 {
+        height: auto;
+        .vertical_center {
+            width: auto;
+            .section_about {
+                .title {
+                    margin-bottom: 20px;
+                }
+                .wrap {
+                    .picture {
+                        img {
+                            height: 200px;
+                            padding: 0 30px;
+                        }
+                    }
+                    .text {
+                        width: auto;
+                        height: auto;
+                        margin: 0;
+                        button {
+                            margin-top: 50px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .section_3{
+      .quotes {
+          p {
+              font-size: 35px;
+              width: 90%;
+          }
+      }
+    }
+    .section_4{
+      .section_team{
+        .team_wrap{
+          .team{
+            .box{
+              display: flex;
+              flex-direction: column;
+              align-self: center;
+              align-items: center;
+            }
+          }
+        }
+      }
+    }
+    .section_5 {
+        height: auto;
+        .section_skills {
+            .title {
+                margin-top: 0;
+            }
+            .our_skills {
+                margin-top: 30px;
+            }
+        }
+    }
+    .section_6 {
+        .quotes {
+            p {
+                font-size: 35px;
+                width: 90%;
+            }
+        }
+    }
+
+    .section_8 {
+        height: auto;
+        .section_portfolio {
+            .buttons_portfolio {
+                flex-wrap: wrap;
+                justify-content: center;
+                button {
+                    width: 350px;
+                }
+            }
+        }
+    }
+    .section_9 {
+        height: auto;
+        .grid-container {
+            .title {
+                margin: 30px 0;
+                padding-top: 20px;
+            }
+            .section_contact {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                .form {
+                    height: 700px;
+                    form {
+                        margin-left: 60px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        width: 90%;
+                        input[value^="Your"] {
+                            width: 90%;
+                        }
+                        textarea.textarea[name='message'] {
+                            width: 90%;
+                        }
+                        input.button {
+                            margin-top: 30px;
+                        }
+                    }
+                }
+                .contact {
+                    height: auto;
+                    width: 80%;
+                    margin-left: 60px;
+                    p {
+                        padding-bottom: 30px;
+                    }
+                }
+            }
+        }
+    }
+}

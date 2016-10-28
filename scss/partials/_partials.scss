@@ -1,0 +1,41 @@
+@mixin background($backgroundUrl) {
+    background-image: $backgroundUrl;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+@mixin icon($backgroundSize) {
+    //  width: 167px;
+    //  height: 181px;
+    float: left;
+    //  margin-left: 10px;
+    background-image: url("../images/icoBg.png");
+    background-size: $backgroundSize;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+        background-image: url("../images/iconBgHover.png");
+    }
+}
+@mixin quote {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+@mixin quote_text($quoteSize,$quoteMargin) {
+    margin: $quoteMargin;
+    font-size: $quoteSize;
+    display: block;
+    text-align: center;
+
+}
+%wrap_ph {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}

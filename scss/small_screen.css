@@ -1,0 +1,211 @@
+@media screen and (max-width: 770px) and (min-width: 620px) {
+  nav .to_be_sticky .navigation .nav-wrap img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1020px) and (min-width: 620px) {
+  header {
+    width: 99%;
+    height: auto;
+  }
+  header .top .logo {
+    padding-top: 40px;
+  }
+  header .top .logo img {
+    height: 80px;
+  }
+  header .top h1 {
+    padding-top: 40px;
+    width: 80%;
+  }
+  header .top h2 {
+    width: 80%;
+  }
+  header .row .wrap {
+    margin: 30 10px;
+  }
+  header .row .wrap a .ico {
+    width: 130px;
+    height: 130px;
+    margin-left: 10px;
+    float: left;
+    background-image: url("../images/icoBg.png");
+    background-size: 130px 130px;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header .row .wrap a .ico:hover {
+    background-image: url("../images/iconBgHover.png");
+  }
+  header .row .wrap a .ico img {
+    height: 75px;
+  }
+  header .wrap_3 {
+    padding-bottom: 50px;
+  }
+  .row .wrap_2 {
+    margin: 0 10px;
+  }
+  .row .wrap_2 .icons_left a .ico {
+    width: 130px;
+    height: 130px;
+    margin-left: 10px;
+    float: left;
+    background-image: url("../images/icoBg.png");
+    background-size: 130px 130px;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .row .wrap_2 .icons_left a .ico:hover {
+    background-image: url("../images/iconBgHover.png");
+  }
+  .row .wrap_2 .icons_left a .ico img {
+    height: 75px;
+  }
+  .row .wrap_2 .icons_rigth a .ico {
+    width: 130px;
+    height: 130px;
+    margin-left: 10px;
+    float: left;
+    background-image: url("../images/icoBg.png");
+    background-size: 130px 130px;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .row .wrap_2 .icons_rigth a .ico:hover {
+    background-image: url("../images/iconBgHover.png");
+  }
+  .row .wrap_2 .icons_rigth a .ico img {
+    height: 75px;
+  }
+  nav .to_be_sticky .navigation div.menu {
+    height: 70px;
+  }
+  nav .to_be_sticky .navigation div.menu li {
+    padding: 25px 0;
+  }
+  nav .to_be_sticky .navigation div.menu li a {
+    font-size: 14px;
+    padding: 15px;
+  }
+  .section_1 {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .section_1 .section_feature {
+    max-width: 802px;
+    min-width: 402px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .section_1 .section_feature .feature {
+    max-width: 400px;
+    min-width: 190px;
+    border: 1px solid green;
+  }
+  .section_2 {
+    height: auto;
+  }
+  .section_2 .vertical_center {
+    width: auto;
+  }
+  .section_2 .vertical_center .section_about .title {
+    margin-bottom: 20px;
+  }
+  .section_2 .vertical_center .section_about .wrap .picture img {
+    height: 200px;
+    padding: 0 30px;
+  }
+  .section_2 .vertical_center .section_about .wrap .text {
+    width: auto;
+    height: auto;
+    margin: 0;
+  }
+  .section_2 .vertical_center .section_about .wrap .text button {
+    margin-top: 50px;
+  }
+  .section_3 .quotes p {
+    font-size: 35px;
+    width: 90%;
+  }
+  .section_4 .section_team .team_wrap .team .box {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+  }
+  .section_5 {
+    height: auto;
+  }
+  .section_5 .section_skills .title {
+    margin-top: 0;
+  }
+  .section_5 .section_skills .our_skills {
+    margin-top: 30px;
+  }
+  .section_6 .quotes p {
+    font-size: 35px;
+    width: 90%;
+  }
+  .section_8 {
+    height: auto;
+  }
+  .section_8 .section_portfolio .buttons_portfolio {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .section_8 .section_portfolio .buttons_portfolio button {
+    width: 350px;
+  }
+  .section_9 {
+    height: auto;
+  }
+  .section_9 .grid-container .title {
+    margin: 30px 0;
+    padding-top: 20px;
+  }
+  .section_9 .grid-container .section_contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .section_9 .grid-container .section_contact .form {
+    height: 700px;
+  }
+  .section_9 .grid-container .section_contact .form form {
+    margin-left: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+  }
+  .section_9 .grid-container .section_contact .form form input[value^="Your"] {
+    width: 90%;
+  }
+  .section_9 .grid-container .section_contact .form form textarea.textarea[name='message'] {
+    width: 90%;
+  }
+  .section_9 .grid-container .section_contact .form form input.button {
+    margin-top: 30px;
+  }
+  .section_9 .grid-container .section_contact .contact {
+    height: auto;
+    width: 80%;
+    margin-left: 60px;
+  }
+  .section_9 .grid-container .section_contact .contact p {
+    padding-bottom: 30px;
+  }
+}
+
+/*# sourceMappingURL=small_screen.css.map */
